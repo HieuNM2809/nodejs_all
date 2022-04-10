@@ -1,5 +1,5 @@
 Nodemon : để auto save serve
-=> npm install --save-dev nodemon 
+=> npm install --save-dev nodemon      //  --save-dev : chỉ sử dụng ở môi trường dev
 
 
 1. Thêm start vào package.json : "start": "nodemon index.js",
