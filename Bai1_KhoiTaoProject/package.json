@@ -1,0 +1,22 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "Tạo project node js demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HieuNM47/nodejs_demo.git"
+  },
+  "author": "hieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HieuNM47/nodejs_demo/issues"
+  },
+  "homepage": "https://github.com/HieuNM47/nodejs_demo#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

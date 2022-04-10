@@ -1,0 +1,9 @@
+Nodemon : để auto save serve
+=> npm install --save-dev nodemon 
+
+
+1. Thêm start vào package.json : "start": "nodemon index.js",
+                                + "start": "nodemon --inspect index.js", // xem them debug
+2.  chạy npm start
+
+
