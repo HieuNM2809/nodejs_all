@@ -1,19 +1,16 @@
 {
-  "name": "bai3_morgan",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "bai3-morgan",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
-  },
-  "devDependencies": {
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.15"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
   }
 }
