@@ -1,0 +1,17 @@
+# pack-refs with: peeled fully-peeled sorted 
+e1d64ad5d85fb4c63e3f0d51a43e9a6ad89792f4 refs/remotes/origin/deploy
+a329ab4f63f41dfcef2510e6550f72cdbda5810a refs/remotes/origin/develop
+3043ac1c47a9f6064b3aa718b75533b8e6cdca90 refs/remotes/origin/implement-chat-with-socketio
+98c849f846c5e77687418832fd3220f010b3a70d refs/remotes/origin/implement-page-admin
+fba7a4848429fcb7aa8c13acfaab4ac5fbe8ba8f refs/remotes/origin/implement-send-file
+5953b288c1fd3479ec7976811daa29314854e4a7 refs/remotes/origin/main
+23c4e5b6af40ca9b125430c4d4d188e6951c0f2a refs/remotes/origin/master
+826387906dd78bdb0ed714a8173dc22d406a3694 refs/remotes/origin/sia-10-add-unread-mess-count
+9831219df72670d11fa9cf1f56cece81b65993e9 refs/remotes/origin/sia-11-send-image-video
+e3cbaf2cec38c14406a53c7605a32a79125f824c refs/remotes/origin/sia-12-delete-message
+01f9314f83637ad39ec2cc3c4388142e1937d381 refs/remotes/origin/sia-15-emojing-a-message
+4bdaf981462d5e11778846b1d21d079981ac68e8 refs/remotes/origin/sia-16-implement-group-chat
+aa85e96bb178a05b413aedef0f092c095821f3f6 refs/remotes/origin/sia-5-implement-chat-with-socketio
+746cb0832fe110c1449ea1f0d563543698b50864 refs/remotes/origin/siw-06-upload-image
+39d917666a09908546b41c600b5a6e112dddc5ef refs/remotes/origin/siw-8-create-a-new-private-chat
+c0d3a7a5ad3be2e95814ca06fde12a7e4d801b8c refs/remotes/origin/update-images

@@ -1,0 +1,75 @@
+{
+  "name": "send-it-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emoji-mart/data": "^1.0.2",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.37",
+    "@material-ui/icons": "^4.11.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "add": "^2.0.6",
+    "axios": "^0.27.2",
+    "bootstrap": "5.2.0-beta1",
+    "emoji-mart": "3.0.1",
+    "gapi-script": "^1.2.0",
+    "lodash": "^4.17.21",
+    "node-sass": "^7.0.1",
+    "peerjs": "^1.4.6",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.1.0",
+    "react-google-login": "^5.2.2",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "reactjs-popup": "^2.0.5",
+    "recharts": "^2.1.12",
+    "redux": "4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "simple-peer": "^9.11.1",
+    "socket.io-client": "^4.5.1",
+    "styled-components": "^5.3.5",
+    "textarea-autosize-reactjs": "^0.0.1",
+    "timeago.js": "^4.0.2",
+    "unop-react-dropdown": "^0.2.3",
+    "uuid": "^8.3.2",
+    "wc-toast": "^1.2.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "watch": "node-sass --watch src/scss/ --output public/assets/css/"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.30.0"
+  },
+  "proxy": "http://localhost:8800/api/",
+  "overrides": {
+    "autoprefixer": "10.4.5"
+  }
+}

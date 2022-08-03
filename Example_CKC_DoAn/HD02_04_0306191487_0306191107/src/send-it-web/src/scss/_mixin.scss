@@ -1,0 +1,38 @@
+@import './constant.scss';
+
+@mixin gradientColor {
+  background-image: linear-gradient(to right, $secondColor, $thirdColor);
+}
+
+@mixin textStyle($fontSize, $fontWeight) {
+  color: $primaryColor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin shadow {
+  -webkit-box-shadow: 0px 0px 15px -10px #000000;
+  box-shadow: 0px 0px 15px -10px #000000;
+}
+
+@mixin avatar($width, $height) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@mixin btn() {
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: $primaryColor;
+  color: white;
+  font-weight: 600;
+}

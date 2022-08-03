@@ -1,0 +1,89 @@
+@import '../../scss/constant';
+@import '../../scss/mixin';
+
+.chat {
+  overflow: hidden;
+  height: calc(100vh - 50px);
+  display: flex;
+  &__menu--wrapper,
+  &__box--wrapper,
+  &__online {
+    height: 100%;
+    overflow: auto;
+  }
+
+  &__menu {
+    flex: 2;
+    .popup-content {
+      width: 500px !important;
+    }
+    &--top {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      justify-content: space-around;
+    }
+    &--searchBar {
+      border-radius: $borderRadiusPrimary;
+      width: 80%;
+      height: 60%;
+      display: flex;
+      padding: 0 !important;
+      align-items: center;
+      background-color: rgb(238, 238, 238);
+    }
+
+    &--searchIcon {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    &--searchInput {
+      border: none;
+      width: 70%;
+
+      font-size: 14px;
+      background-color: rgb(238, 238, 238);
+    }
+    &--searchInput:focus {
+      outline: none;
+    }
+
+    &--buttonAdd {
+      cursor: pointer;
+    }
+
+    &--clearIcon {
+      color: rgb(195, 195, 195);
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+
+  &--top {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chat {
+    &__menu {
+      flex: 1;
+    }
+    &__menu--input {
+      display: none;
+    }
+
+    &__box {
+      flex: 10;
+    }
+
+    &__online {
+      flex: 1px;
+    }
+  }
+}

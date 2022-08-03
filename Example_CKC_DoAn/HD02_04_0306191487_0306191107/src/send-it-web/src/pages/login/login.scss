@@ -1,0 +1,174 @@
+@import '../../scss/constant';
+@import '../../scss/mixin';
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    width: 40%;
+    background-color: white;
+    border-radius: $borderRadiusPrimary;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 10;
+  }
+
+  &__box {
+    width: 80%;
+    height: 300px;
+    padding-top: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__input {
+    height: 50px;
+    border-radius: $borderRadiusPrimary;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+  }
+
+  &__inputPassword {
+    display: flex;
+    flex-direction: row;
+    border-radius: $borderRadiusPrimary;
+    border: 1px solid gray;
+  }
+
+  &__inputPass {
+    flex-grow: 2;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__buttonPass {
+    background: white;
+    border-radius: $borderRadiusPrimary;
+    border: none;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+
+  &__button {
+    width: 200px;
+    height: 50px;
+    border-radius: $borderRadiusPrimary;
+    border: none;
+    background-color: $primaryColor;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    align-self: end;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $thirdColor;
+      color: $primaryColor;
+      transition: 0.3s;
+    }
+  }
+
+  &__button:focus {
+    outline: none;
+  }
+
+  &__button:disabled {
+    cursor: not-allowed;
+  }
+
+  &__logo {
+    width: 50px;
+    height: auto;
+  }
+
+  &__desc {
+    font-size: 24px;
+  }
+
+  &__navLink {
+    cursor: pointer;
+  }
+
+  &__navLinkContainer {
+    display: flex;
+    justify-content: space-between;
+
+    &--title {
+      text-decoration: none;
+      color: $primaryColor;
+      font-size: 18px;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  &__createAccount {
+    align-self: end;
+  }
+
+  &__registerButton {
+    width: 60%;
+    align-self: center;
+    height: 50px;
+    border-radius: $borderRadiusPrimary;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__forgot {
+    text-align: end;
+    color: #1775ee;
+  }
+
+  &__title h2 {
+    position: relative;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+
+  &__title h2::after {
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 4px;
+    background: #ff2575;
+    content: '';
+  }
+}
+
+.bg-sign-up {
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  filter: blur(5px);
+}

@@ -1,0 +1,54 @@
+@import '../../scss/constant';
+
+.bgConversation {
+  &__input {
+    &:focus {
+      box-shadow: none !important;
+      border-color: $primaryColor !important;
+    }
+    width: 110px !important;
+  }
+  &__img {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  }
+
+  &__buttonUnhandled {
+    background-color: $thirdColor;
+    box-shadow: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: $borderRadiusPrimary;
+    transition: 0.3s all;
+  }
+  &__button {
+    background-color: $secondColor;
+    box-shadow: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: $borderRadiusPrimary;
+    transition: 0.3s all;
+
+    &:hover {
+      background: $primaryColor;
+    }
+
+    &:focus {
+      background: $primaryColor;
+      box-shadow: none;
+    }
+
+    &:active {
+      background: $primaryColor;
+      box-shadow: none;
+    }
+  }
+
+  &__labels {
+    font-size: 11px;
+  }
+}

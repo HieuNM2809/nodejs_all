@@ -1,0 +1,82 @@
+@import '../../scss/constant';
+
+.conversation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-height: 86px;
+  cursor: pointer;
+
+  &__time {
+    color: rgb(185, 185, 185);
+    font-size: 14px;
+    text-align: right;
+  }
+
+  &__unreadMark {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    width: 25%;
+    &--mark {
+      position: absolute;
+      right: 15%;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(85, 159, 255);
+      border-radius: 50%;
+    }
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__message {
+    font-size: 14px;
+    color: gray;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    max-width: 148px;
+
+    &--name {
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+    }
+  }
+  &__name {
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    max-width: 148px;
+  }
+}
+
+.conversation:hover {
+  background-color: #ebefff;
+}
+
+.activeConversation {
+  border-right: 4px solid $primaryColor;
+  background-color: #ebefff;
+}
+
+@media screen and (max-width: 768px) {
+  .conversationName {
+    display: none;
+  }
+}

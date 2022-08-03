@@ -1,0 +1,131 @@
+@import '../../scss/constant';
+@import '../../scss/mixin';
+
+.register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    width: 40%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 10;
+  }
+
+  &__logo {
+    width: 50px;
+    height: auto;
+  }
+
+  &__desc {
+    font-size: 24px;
+  }
+
+  &__box {
+    width: 80%;
+    height: 500px;
+    padding-top: 20px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__input {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+
+  &__button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: $primaryColor;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    align-self: end;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $thirdColor;
+      color: $primaryColor;
+      transition: 0.3s;
+    }
+  }
+
+  &__registerButton {
+    width: 100px;
+    align-self: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: $primaryColor;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $thirdColor;
+      color: $primaryColor;
+      transition: 0.3s;
+    }
+  }
+
+  &__moveBackLogin {
+    text-decoration: none;
+  }
+  &__linkTag {
+    align-self: end;
+
+    &--title {
+      color: $primaryColor;
+      font-size: 18px;
+      text-decoration: none;
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+.register__title h2::after {
+  position: absolute;
+  top: -23%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60px;
+  height: 4px;
+  background: #ff2575;
+  content: '';
+}
+
+.bg-sign-up {
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  filter: blur(5px);
+}

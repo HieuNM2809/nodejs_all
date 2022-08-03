@@ -1,0 +1,124 @@
+@import '../../scss/constant';
+@import '../../scss/mixin';
+
+.topbar {
+  &__space {
+    width: 1%;
+  }
+  &__container {
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    @include shadow();
+    top: 0;
+    z-index: 999;
+  }
+  &__left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    &--link {
+      text-decoration: none !important;
+    }
+    &--logo {
+      width: 40px;
+    }
+    &--title {
+      font-size: 28px;
+      margin-left: 20px;
+      font-weight: bold;
+      color: $primaryColor;
+      cursor: pointer;
+    }
+  }
+  &__right {
+    flex: 0.5;
+    align-self: end;
+    justify-self: end;
+    color: white;
+    padding-left: 40px;
+
+    @keyframes AnimatedDropdownAppear {
+      0% {
+        margin-top: 0;
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        margin-top: 20px;
+      }
+    }
+    @keyframes AnimatedDropdownDisappear {
+      0% {
+        opacity: 1;
+        margin-top: 20px;
+      }
+      100% {
+        opacity: 0;
+        margin-top: 0px;
+      }
+    }
+    .openAnimation {
+      animation: AnimatedDropdownAppear 0.3s forwards;
+    }
+
+    .closeAnimation {
+      animation: AnimatedDropdownDisappear 0.3s forwards;
+    }
+    .animatedDropdownStyles {
+      margin-top: 10px;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: white;
+      box-shadow: 10px 5px 20px rgb(197, 197, 197);
+
+      width: 120px;
+      text-align: center;
+
+      &__item {
+        white-space: nowrap;
+        color: black;
+        list-style: none;
+
+        &--button {
+          border: none;
+          width: 100%;
+          background-color: white;
+          padding: 10px 0;
+          &:hover {
+            background-color: #ededed;
+            transition: 0.3s all;
+          }
+        }
+      }
+    }
+
+    &--click {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      width: 100%;
+      // margin-bottom: 10px;
+    }
+    &--img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      align-self: center;
+      cursor: pointer;
+    }
+
+    &--title {
+      padding-left: 22px;
+      color: $primaryColor;
+      font-weight: 500;
+    }
+    &--dropdown {
+      background-color: $primaryColor;
+    }
+  }
+}

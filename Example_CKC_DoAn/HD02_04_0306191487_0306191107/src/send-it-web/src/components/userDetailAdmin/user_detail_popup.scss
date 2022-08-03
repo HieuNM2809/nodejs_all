@@ -1,0 +1,32 @@
+.usdt {
+  &__popup {
+    position: relative;
+    width: 400px;
+    height: auto;
+    border-radius: 6px;
+    background: #2b2d32;
+    color: whitesmoke;
+    margin: 0;
+
+    &--exit {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+
+    &--img {
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0dcaf0;
+    }
+  }
+}
+
+.statistical {
+  &__title {
+    background: #d2d2d2;
+    color: #2e2e2e;
+    border-radius: 2px;
+  }
+}

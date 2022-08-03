@@ -1,0 +1,55 @@
+@import '../../scss/constant';
+@import '../../scss/mixin';
+
+.widgetsSmall {
+  flex: 1;
+  @include shadow();
+  padding: 20px;
+
+  .widgetsSmallTitle {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .widgetsSmallList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .widgetsSmallItem {
+      @include flex();
+      justify-content: space-between;
+      margin: 20px 0px;
+
+      .widgetsSmallImg {
+        @include avatar(40px, 40px);
+      }
+
+      .widgetsSmallUser {
+        display: flex;
+        flex-direction: column;
+
+        .widgetsSmallUsername {
+          font-weight: 600;
+        }
+
+        .widgetsUserSmallJob {
+          font-weight: 300;
+        }
+      }
+
+      .widgetsSmallButton {
+        @include flex();
+        border: none;
+        border-radius: 10px;
+        padding: 7px 10px;
+        background-color: #eeeef7;
+        color: #555;
+        cursor: pointer;
+
+        .widgetsSmallIcon {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

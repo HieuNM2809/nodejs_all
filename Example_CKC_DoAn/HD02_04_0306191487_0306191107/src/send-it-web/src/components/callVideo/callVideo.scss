@@ -1,0 +1,44 @@
+@import '../../scss/constant';
+
+.call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    width: 300px;
+    // border-radius: 50%;
+    object-fit: contain;
+  }
+
+  &__camera {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+    &--me {
+      padding-left: 10px;
+    }
+  }
+
+  &__btnLeave {
+    margin: 20px !important;
+    background-color: $primaryColor !important;
+    color: white !important;
+  }
+  &__btnAnswer {
+    background-color: #97d6ff;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $borderRadiusPrimary;
+
+    &:hover {
+      background-color: #bbe4ff;
+      color: whitesmoke;
+      transition: 0.3s all;
+    }
+  }
+}

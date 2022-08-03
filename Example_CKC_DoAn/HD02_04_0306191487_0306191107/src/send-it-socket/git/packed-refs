@@ -1,0 +1,10 @@
+# pack-refs with: peeled fully-peeled sorted 
+eec4f8acc83ba701cd07b8274eb662da87f4c73b refs/remotes/origin/call-video
+9292d1a36e82b2dd99a25287ab1c8aedcb349b6b refs/remotes/origin/develop
+01c5a1c05aad7d94a90007be03aa6c832fc337c2 refs/remotes/origin/main
+680d4f5206aaecc921e3a0b5fabfaf015a5ad151 refs/remotes/origin/master
+fc3afb1a9ccdff0e60a91534a58bf5077cf0b749 refs/remotes/origin/new-chat-private
+bb8e11c3077d91596d9ae4381b8a16d41cd54640 refs/remotes/origin/sis-11-send-image-video
+fc309bd7f285dec863f86a095a0f33bc1db86e3c refs/remotes/origin/sis-12-delete-message
+28d0f1b93b0bea3a791f72126346323d9b1de0f3 refs/remotes/origin/sis-15-emojing
+470c580ddca16fba6e5feb35c4504692e6d6c437 refs/remotes/origin/siw-10-add-unread-message

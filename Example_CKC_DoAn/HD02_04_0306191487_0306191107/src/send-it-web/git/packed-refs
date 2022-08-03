@@ -1,0 +1,15 @@
+# pack-refs with: peeled fully-peeled sorted 
+f16a8137367d2c52f404c9a2467d58786223cee5 refs/remotes/origin/develop
+986660f0da622707bbed1da3bb4e1edbdf9d1680 refs/remotes/origin/fix-UI-default-pattern
+c5ead387376a45100bdcea4b7189e84e7f69bc88 refs/remotes/origin/implement-home-chat-ui
+a12b7e0b62ea3be03ba9bcd2e568c0f1a582aa3c refs/remotes/origin/implement-page-admin
+52105ee09bf4ecd99806f95229d7f0779a0f25f3 refs/remotes/origin/implement-send-file
+c050340d6a1d268d4e85d72cb87ab16300ad95cf refs/remotes/origin/main
+7190f41cfccdd01cde5eb4ec70e6b9132b3d6618 refs/remotes/origin/resolve-problem-to-deploy
+aa61fc0b434821b9ef0d2761e9b7f129ebd68f81 refs/remotes/origin/siw-10-add-unread-mess-count
+ebff19e7d8b995782f50e24c1524d4c9e47bbadd refs/remotes/origin/siw-11-send-image-video
+928cf2f02a22c1c310ae12deead9217ee92d00fc refs/remotes/origin/siw-12-delete-message
+e098c9849b1fd68e92e92f9e2a1368525870003a refs/remotes/origin/siw-15-emojing-a-message
+c97a86236983f5440a75ad35db861c99c73a8758 refs/remotes/origin/siw-2-implement-home-chat-ui
+b80dbbda441b6d8b7a30d3b351a975eda2ea9908 refs/remotes/origin/siw-3-implement-chat-with-socketio
+c74f3ee1f42b19f71d080d4187934748dcaa4043 refs/remotes/origin/siw-9-create-a-new-private-chat

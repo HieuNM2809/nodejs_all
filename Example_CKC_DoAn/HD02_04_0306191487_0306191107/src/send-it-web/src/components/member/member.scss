@@ -1,0 +1,31 @@
+.member {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    font-weight: 500;
+  }
+}
+
+.member:hover {
+  background-color: rgb(245, 243, 243);
+}
+
+@media screen and (max-width: 768px) {
+  .memberName {
+    display: none;
+  }
+}

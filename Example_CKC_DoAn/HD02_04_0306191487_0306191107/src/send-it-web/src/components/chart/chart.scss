@@ -1,0 +1,12 @@
+@import '../../scss/constant';
+@import '../../scss/mixin';
+
+.chart {
+  margin: 20px;
+  padding: 20px;
+  @include shadow();
+
+  .chartTitle {
+    margin-bottom: 20px;
+  }
+}

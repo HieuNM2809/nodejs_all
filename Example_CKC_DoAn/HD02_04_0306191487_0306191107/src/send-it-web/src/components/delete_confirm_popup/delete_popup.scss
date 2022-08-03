@@ -1,0 +1,25 @@
+.delete {
+  &__popup {
+    width: 400px;
+    height: auto;
+    border-radius: 6px;
+    background: #191c21;
+    color: whitesmoke;
+
+    &--buttons {
+      color: whitesmoke;
+      font-weight: 600;
+    }
+  }
+}
+
+.popupBtn {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.popupBtn:hover {
+  cursor: pointer;
+  background: #4a4c4f;
+}
