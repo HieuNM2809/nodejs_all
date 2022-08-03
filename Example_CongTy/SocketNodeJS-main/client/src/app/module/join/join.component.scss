@@ -1,0 +1,129 @@
+.layout-join-chat{
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  opacity: 1;
+  z-index: 999;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #efefef;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    background: #fff;
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+  }
+  .box-join{
+    background: #fff;
+    // margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    width: 80%;
+    display: flex;
+    &_left{
+      top: 0;
+      bottom: 0;
+      opacity: 1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      border-right: solid 1px #e7e7e7;
+      width: 75% !important;
+      .info{
+        top: 35%;
+        max-width: 400px;
+        margin: 0 auto;
+        img{
+          width: 150px;
+        }
+        .info-text{
+          font-size: 35px;
+          color: #000;
+          text-transform: uppercase;
+          animation: flip 2s infinite;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+        }
+        p{
+          margin-bottom: 25px;
+          font-size: 15px;
+          font-style: italic;
+        }
+      }
+    }
+    &_right{
+      width: 44% !important;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 90px;
+      background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+      background-size: 400% 400%;
+      animation: Gradient 15s ease infinite;
+      .chose-language{
+        position: absolute;
+        top: 0;
+        right: 80px;
+        color: #fff;
+        ::ng-deep{
+          button{
+            .mat-button-wrapper{
+              align-items: center;
+              display: flex;
+            }
+            div{
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+      .form-join{
+        mat-label{
+          color: #fff;
+          font-size: 16px;
+        }
+        .w-100{
+          width: 100%;
+          mat-form-field{
+            width: 100%;
+          }
+          ::ng-deep{
+            .mat-form-field .mat-form-field-infix, .mat-form-field-appearance-outline .mat-form-field-infix{
+              color: #fff;
+            }
+            .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+              color:#fff
+            }
+            .mat-select-value{
+              color: #fff;
+            }
+          }
+        }
+        .btn-join{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          top: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<div mat-dialog-title>
+  <h1 align="center" translate>chat.color</h1>
+</div>
+<mat-dialog-content>
+  <!-- <mat-grid-list cols="4" rowHeight="3:3" gutterSize="12px">
+    <mat-grid-tile mat-button *ngFor="let item of data; let i=index"
+      [ngStyle]="{'background-image': item.style,'border-radius':'50%','cursor':'pointer','box-shadow':'rgba(0, 0, 0, 0.1) 0px 0px 10px'}" (click)="choseColorTheme(item.style)">
+    </mat-grid-tile>
+  </mat-grid-list> -->
+  <div class="all-color-theme">
+    <div *ngFor="let item of data; let i=index"(click)="choseColorTheme(item.style)" class="chill" [ngClass]="colorChose ===item.style?'active':''">
+      <div [ngStyle]="{'background-image': item.style,'border-radius':'50%','cursor':'pointer','width':'62px', 'height':'60px'}" mat-fab></div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close > <span translate>chat.btn-cancel</span></button>
+  <button mat-raised-button color="primary" mat-dialog-close cdkFocusInitial (click)="saveColorTheme()">
+    <span translate>chat.btn-save</span>
+  </button>
+</mat-dialog-actions>

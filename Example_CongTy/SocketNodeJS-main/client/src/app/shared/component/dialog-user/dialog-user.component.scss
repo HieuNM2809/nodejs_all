@@ -1,0 +1,19 @@
+.mat-dialog-content {
+  padding-top: 16px;
+}
+
+.button-globe {
+  float:right;
+  margin-top:-5px;
+}
+
+.dialog-title {
+  float:left;
+}
+
+.dialog-content {
+  float: left;
+  .mat-form-field .mat-input-element{
+    padding-left: 16px;
+  }
+}

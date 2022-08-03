@@ -1,0 +1,13 @@
+
+::ng-deep{
+  .view-images{
+    mat-dialog-container{
+      padding: 0px !important;
+      overflow: hidden;
+      img{
+        object-fit: cover;
+        overflow: hidden;
+      }
+    }
+  }
+}

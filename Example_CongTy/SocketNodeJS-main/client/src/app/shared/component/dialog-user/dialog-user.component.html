@@ -1,0 +1,33 @@
+<!-- <div>
+  <div class="dialog-title" mat-dialog-title>Nhập họ tên để tham gia cuộc trò chuyện</div>
+
+  <mat-dialog-content class="dialog-content">
+    <mat-form-field>
+      <input matInput name="username" placeholder="Nhập họ tên" (keyup.enter)="onSave()"
+        [formControl]="usernameFormControl" required>
+      <mat-error *ngIf="usernameFormControl.hasError('required')">Vui lòng nhập họ tên</mat-error>
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions [attr.align]="'end'">
+    <button mat-raised-button color="primary" mat-dialog-close (click)="onSave()"
+      [disabled]="usernameFormControl.hasError('required')">Chat!</button>
+  </mat-dialog-actions>
+</div> -->
+<h1 mat-dialog-title>{{params.title}}</h1>
+<div mat-dialog-content>
+  <mat-form-field style="width: 100%;" appearance="outline">
+    <mat-label>Họ và tên</mat-label>
+    <input matInput name="username" placeholder="Nhập họ tên" (keyup.enter)="onSave()"
+      [formControl]="usernameFormControl" required>
+    <mat-error *ngIf="usernameFormControl.hasError('required')">Vui lòng nhập họ tên</mat-error>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions [attr.align]="'end'" *ngIf="params?.dialogType === 'new-user'">
+  <button mat-raised-button color="primary" mat-dialog-close (click)="onSave()"
+      [disabled]="usernameFormControl.hasError('required')">Chat!</button>
+</div>
+<mat-dialog-actions *ngIf="params?.dialogType === 'edit-user'" [attr.align]="'end'">
+  <button mat-button mat-dialog-close color="secondary">Close</button>
+  <button mat-raised-button color="primary" mat-dialog-close (click)="onSave()">Save</button>
+</mat-dialog-actions>

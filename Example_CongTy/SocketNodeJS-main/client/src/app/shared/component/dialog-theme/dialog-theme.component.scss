@@ -1,0 +1,37 @@
+:host::ng-deep {
+  .all-color-theme{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+
+    .chill{
+      text-align: center;
+      line-height: 100px;
+      margin-bottom: 8px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 50%;
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 16px;
+      }
+      div{
+        margin: 8px 0px;
+      }
+    }
+    .active{
+      text-align: center;
+      line-height: 100px;
+      margin-bottom: 8px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 16px;
+    }
+  }
+}

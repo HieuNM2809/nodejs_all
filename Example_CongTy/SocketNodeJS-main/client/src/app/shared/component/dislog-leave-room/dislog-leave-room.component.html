@@ -1,0 +1,14 @@
+<div mat-dialog-content >
+  <div class="icon-wanning">
+    <img src="../../../../assets/images/icon_alert-yellow.png" alt="">
+  </div>
+  <div class="title-leave-room" [translate]="'chat.config_remove'" [translateParams]="{ name: data }"></div>
+</div>
+<div mat-dialog-actions class="btn-action-leave-room">
+  <button mat-button mat-dialog-close >
+    <span translate>chat.btn-cancel</span>
+  </button>
+  <button mat-button (click)="acceptLeaveRoom()">
+    <span translate>chat.btn-accept</span>
+  </button>
+</div>

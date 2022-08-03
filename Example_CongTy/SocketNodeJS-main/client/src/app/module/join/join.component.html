@@ -1,0 +1,59 @@
+<div class="layout-join-chat">
+  <div class="box-join">
+    <div class="box-join_left">
+      <div class="info">
+
+        <div class="info-text"><img src="../../../assets/images/chat-room-removebg-preview.png" alt="">SOCKET DEMO</div>
+        <p class="text" translate>boxJoin.des</p>
+
+
+      </div>
+    </div>
+    <div class="box-join_right">
+      <div class="chose-language">
+        <button mat-icon-button [matTooltip]="'boxJoin.choseLang' | translate" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>language</mat-icon>
+          <div [translate]="'langList.'+lang"></div>
+        </button>
+
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="changeLang('vi')" [disabled]="lang==='vi'" style="display: flex; align-items: center;">
+            <img src="../../../assets/images//icon-language/vi.png" style="width: 30px; height: 30px; object-fit: cover;border-radius: 50%;" alt="">
+            <div style="margin-left: 16px;" translate>langList.vi</div>
+          </button>
+          <button mat-menu-item (click)="changeLang('en')"  [disabled]="lang==='en'" style="display: flex; align-items: center;">
+            <img src="../../../assets/images//icon-language/en.png" style="width: 30px; height: 30px;object-fit: cover;border-radius: 50%" alt="">
+            <div style="margin-left: 16px;" translate>langList.en</div>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="form-join">
+        <form [formGroup]="joinChatForm" (ngSubmit)="joinChat()" *ngIf="joinChatForm">
+          <div>
+            <mat-label translate>boxJoin.name</mat-label>
+            <div class="w-100">
+              <mat-form-field appearance="outline">
+                <input matInput formControlName="user_name" autocomplete="off">
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <mat-label translate>boxJoin.join_group</mat-label>
+            <div class="w-100">
+              <mat-form-field appearance="outline">
+                <mat-select formControlName="group">
+                  <mat-option [value]="item.name_room" *ngFor="let item of listGroup">PNC - {{item.name_room}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+        </form>
+        <div class="btn-join">
+          <button mat-raised-button [disabled]="!joinChatForm.valid" (click)="joinChat()">
+            <span translate>boxJoin.btn_join</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

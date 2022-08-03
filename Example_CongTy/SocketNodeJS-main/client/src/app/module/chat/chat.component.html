@@ -1,0 +1,132 @@
+<div class="layout-chat">
+  <div class="layout-chat__left">
+    <div class="layout-chat__left__logo">
+      <img src="../../../assets/images/chat-room-removebg-preview.png" alt="">
+    </div>
+    <div class="layout-chat__left__name-room">
+      <div class="layout-chat__left__name-room__title-room">
+        <mat-icon>forum</mat-icon>
+        <div class="layout-chat__left__name-room__title-room__name" translate>chat.name_room</div>
+      </div>
+      <div class="layout-chat__left__name-room__list-user" *ngIf="roomName">PNC - {{roomName}}</div>
+      <div class="layout-chat__left__user-list">
+        <mat-icon>group</mat-icon>
+        <div class="layout-chat__left__user-list__name" translate>chat.users</div>
+      </div>
+      <div class="layout-chat__left__user-list__info">
+        <mat-list role="list" *ngIf="listUserRoom.length>0">
+          <mat-list-item role="listitem" *ngFor="let item of listUserRoom">
+            <span>{{item.room}} - {{item.name}} </span>
+            <span *ngIf="storeUser.name === item.name" translate> chat.you</span>
+          </mat-list-item>
+        </mat-list>
+      </div>
+    </div>
+    <div class="layout-chat__left__button">
+      <div class="layout-chat__left__button__leave-room">
+        <button mat-raised-button (click)="leaveRoom()"><span translate>chat.leave_room</span></button>
+      </div>
+      <div class="layout-chat__left__button__change-language">
+        <button mat-icon-button [matTooltip]="'boxJoin.choseLang' | translate" [matMenuTriggerFor]="menu"
+          aria-label="Example icon-button with a menu">
+          <mat-icon>language</mat-icon>
+          <div [translate]="'langList.'+lang"></div>
+        </button>
+
+        <mat-menu #menu="matMenu" xPosition="after">
+          <button mat-menu-item (click)="changeLang('vi')" [disabled]="lang==='vi'"
+            style="display: flex; align-items: center;">
+            <img src="../../../assets/images//icon-language/vi.png"
+              style="width: 30px; height: 30px; object-fit: cover;border-radius: 50%;" alt="">
+            <div style="margin-left: 16px;" translate>langList.vi</div>
+          </button>
+          <button mat-menu-item (click)="changeLang('en')" [disabled]="lang==='en'"
+            style="display: flex; align-items: center;">
+            <img src="../../../assets/images//icon-language/en.png"
+              style="width: 30px; height: 30px;object-fit: cover;border-radius: 50%" alt="">
+            <div style="margin-left: 16px;" translate>langList.en</div>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+  <div class="layout-chat__center">
+    <div class="layout-chat__center__chat-list">
+      <mat-list id="scrollMe" class="list-message">
+        <div *ngFor="let list of messages" class="list-message"
+          [ngClass]="list.id==='ChatRoom Bot'?'ml-2':(list.name === storeUser.name)?'pull-right':'pull-left'"
+          style="min-height: 48px !important;">
+          <mat-list-item class="item"
+            [ngStyle]="{'background-image': colorTheme&& colorTheme.length>0?colorTheme:'linear-gradient(to right, rgb(207, 217, 223) 0%, rgb(226, 235, 240) 100%);', 'color':colorTheme && colorTheme.length>0?'#ffffff':'#000'}">
+            <div>
+              <div class="user-name">{{list.name}}</div>
+              <div class="info-message" *ngIf="list.text">{{list.text}}</div>
+              <div class="time-line">{{list.time | date: 'dd/MM/yyyy hh:mm'}}</div>
+
+            </div>
+          </mat-list-item>
+
+        </div>
+      </mat-list>
+    </div>
+    <div class="layout-chat__center__chat-footer-container">
+      <mat-form-field class="full-width">
+        <textarea cdkTextareaAutosize cdkAutosizeMinRows="0" cdkAutosizeMaxRows="0.5" #autosize="cdkTextareaAutosize"
+          matInput #inputMessage placeholder="Vui lòng nhập nội dung tin nhắn...." [(ngModel)]="messageContent"
+          (keydown.enter)="sendMessage(messageContent)"></textarea>
+        <button (click)="sendMessage(inputMessage.value)" mat-icon-button
+          aria-label="Example icon button with a vertical three dot icon">
+          <mat-icon matSuffix>send</mat-icon>
+        </button>
+        <button class="btn-upload" mat-icon-button
+          aria-label="Example icon button with a vertical three dot icon">
+          <mat-icon matSuffix>image</mat-icon>
+          <input type="file" id="upload" (change)="uploadImages($event)"/>
+        </button>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="layout-chat__right">
+    <div class="chat-option" *ngIf="listUserRoom || listUserRoom.length>0">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenStateRight = true" (closed)="panelOpenStateRight = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title translate>
+              chat.pannel-option-chat
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-selection-list [multiple]="false">
+            <mat-list-option (click)="openChoseThemeColor()">
+              <div class="list-option">
+                <mat-icon>format_color_fill</mat-icon>
+                <mat-label translate>chat.them-change</mat-label>
+              </div>
+            </mat-list-option>
+            <!-- <mat-list-option>
+              <div class="list-option">
+                <mat-icon>edit</mat-icon>
+                <mat-label translate>chat.edit-name</mat-label>
+              </div>
+            </mat-list-option> -->
+          </mat-selection-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenStateRight = true" (closed)="panelOpenStateRight = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title translate>
+              chat.media
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p translate>chat.update</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenStateRight = true" (closed)="panelOpenStateRight = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title translate>
+              chat.support
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p translate>chat.update</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-form-field {
+  margin-bottom: 15px;
+}
+
+.mat-form-field:not(.mat-form-field-appearance-outline) .mat-form-field-label-wrapper {
+  display: none;
+}
+
+.mat-form-field .mat-form-field-wrapper,
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+  margin-bottom: 0px!important;
+  padding-bottom: 0!important;
+}
+
+.mat-form-field .mat-form-field-infix,
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0px 0px;
+  min-height: 45px;
+  color: #3c4043;
+  border-top: 0!important;
+  width: auto!important;
+}
+
+.mat-form-field:not(.mat-form-field-appearance-outline) .mat-form-field-flex {
+  border-radius: 20px;
+  background-color: #f1f3f4;
+}
+
+.mat-form-field.full,
+.mat-form-field-appearance-outline.full,
+.full>mat-form-field.mat-form-field {
+  width: 100%;
+}
+
+.mat-form-field .mat-form-field-underline {
+  background-color: transparent!important;
+  top: 100%!important;
+}
+
+.mat-form-field input,
+.mat-form-field .mat-select-value,
+.mat-form-field textarea {
+  /* padding: 0px 10px; */
+  margin: 0;
+}
+
+.mat-form-field-infix {
+  align-items: center;
+  display: flex!important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  top: 0!important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-label {
+  font-size: 14px;
+  top: 2.5em!important;
+  margin-top: -0.9em;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label,
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  -webkit-transform: translateY(-1.1em) scale(.75);
+  transform: translateY(-1.1em) scale(.75);
+}
+
+.mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+  transform: translateY(-2%);
+}
+
+mat-option.mat-option:not([null-option]),
+.h40 {
+  height: 39px!important;
+  line-height: 39px!important;
+}
+
+mat-input-container.mat-input-focused label {
+  display: none
+}
+
+.mat-form-field .mat-input-element {
+  font-size: 14px!important;
+}
+
+.mat-form-field textarea.mat-input-element::placeholder,
+.mat-form-field input.mat-input-element::placeholder,
+.mat-form-field .mat-select-value .mat-select-placeholder {
+  color: #616161!important;
+  -webkit-text-fill-color: #616161!important;
+  transition: initial!important;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.mat-form-field textarea {
+  padding: 10px 0px!important;
+}
+.mat-form-field .mat-form-field-subscript-wrapper {
+  top: 100%;
+  margin-top: 3px!important;
+}
+::-webkit-scrollbar {
+  background-color: #f5f5f5;
+  height: 0px !important;
+  width: 0px !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8b8e8f;
+  border-radius: 16px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+}

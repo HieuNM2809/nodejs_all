@@ -1,0 +1,276 @@
+// .main{
+//   display: flex;
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   .main-left{
+//     background-color: #3596FF;
+//     width: calc(100% - 80%);
+//     height: 100%;
+//     // border-top-right-radius: 16px;
+//     // border-bottom-right-radius: 16px;
+//     .title-app{
+//       padding: 8px 8px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       .name-app{
+//         font-size: 18px;
+//         padding: 8px 8px;
+//         color: #fff;
+//         font-weight: 600;
+//       }
+//       mat-icon{
+//         color: #fff;
+//       }
+//     }
+//     .search-chat{
+//       padding: 8px 8px;
+//       .form{
+//         .full-width{
+//           width: 100%;
+//         }
+//       }
+//     }
+//     .menu-chat-chose{
+//       padding: 8px 8px;
+//       .mat-button-toggle-group{
+//         width: 100%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         border: none;
+//         background: transparent;
+//         .mat-button-toggle{
+//           background: transparent;
+//           mat-icon{
+//             color: #fff;
+//           }
+//         }
+//         .mat-button-toggle-checked{
+//           background:rgba(60,64,67,.08);
+//           border-radius: 8px;
+//         }
+//       }
+//     }
+//     .list-messages-chat{
+//       height: 100%;
+//       // overflow: scroll;
+//       .list-messages{
+//         cursor: pointer;
+//         display: flex;
+//         align-items: center;
+//         padding: 8px 0px;
+//         .avartar{
+//           padding-left: 8px;
+//           border-radius: 50%;
+//           display: flex;
+//           align-items: center;
+//           img{
+//             width: 40px;
+//             height: 40px;
+//             border-radius: 50%;
+//           }
+//         }
+//         .detail-message{
+//           margin-left: 8px;
+//           .name-user{
+//             color: #fff;
+//             font-size: 16px;
+//             -webkit-box-orient: vertical;
+//             display: -webkit-box;
+//             overflow: hidden;
+//             -webkit-line-clamp: 1;
+//           }
+//           .info-message{
+//             color: #fff;
+//             font-size: 12px;
+//             font-style: italic;
+//             -webkit-box-orient: vertical;
+//             display: -webkit-box;
+//             overflow: hidden;
+//             width: 190px;
+//             -webkit-line-clamp: 1;
+//           }
+//         }
+//         &:hover{
+//           background-color: #4194ED;
+//         }
+//       }
+//     }
+//   }
+//   .main-selector{
+//     background-color: #F8F9FB;
+//     width: calc(100% - 30%);
+//     height: 100%;
+//     .chat-list {
+//       height: calc(100vh - 50px);
+//       overflow: auto;
+//       width: 100%;
+//       mat-list{
+//         width: 100%;
+//         .list-message{
+//           // display: flex;
+//           padding: 0px 16px;
+//           mat-list-item {
+//             margin-top: 2px;
+//             margin-bottom: 2px;
+//             border-radius: 20px;
+//             // background-color: #E8EAF6;
+//             p{
+//               white-space: break-spaces;
+//               word-break: break-word;
+//             }
+//             .time-line{
+//               font-size: 12px;
+//               position: absolute;
+//               right: 12px;
+//               bottom: 0;
+//               font-style: italic;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .chat-footer-container {
+//       position: inherit;
+//       /* top: 90%; */
+//       width: 100%;
+//       .full-width{
+//         width: 90%;
+//         padding: 0px 16px;
+//       }
+//       mat-form-field{
+//         width: 100%;
+//         margin-bottom: 0px !important;
+//       }
+//     }
+//   }
+//   .main-right{
+//     width: calc(100% - 70%);
+//     height: 100%;
+//     .info-user-chat{
+//       padding: 16px 8px;
+//       .avatar-user{
+//         cursor: pointer;
+//         padding-left: 8px;
+//         border-radius: 50%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         img{
+//           width: 80px;
+//           height: 80px;
+//           border-radius: 50%;
+//         }
+//       }
+//       .info-user{
+//         margin-top: 8px;
+//         text-align: center;
+//         &:hover{
+//           text-decoration: dashed;
+//         }
+//       }
+//     }
+//     .chat-option{
+//       padding: 0px 8px;
+//       .list-option{
+//         display: flex;
+//         align-items: center;
+//         mat-label{
+//           margin-left: 16px;
+//         }
+//       }
+//     }
+//   }
+// }
+// ::ng-deep{
+//   .search-chat .mat-focused.mat-form-field-appearance-outline .mat-form-field-outline, .search-chat .mat-form-field-appearance-outline:not(.mat-form-field-disabled):not(.mat-form-field-invalid) .mat-form-field-flex:hover .mat-form-field-outline{
+//     color: #cccc;
+//   }
+//   .menu-chat-chose .mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle{
+//     border-left: none !important;
+//   }
+//   .menu-chat-chose .mat-button-toggle-appearance-standard .mat-button-toggle-label-content{
+//     padding: 0 24px;
+//   }
+//   .main-selector .chat-list .pull-left {
+//     width:50%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//   }
+//   .main-selector .chat-list .pull-right {
+//     width:50%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//   }
+//   .main-selector .chat-list .pull-right mat-list-item {
+//     position: relative;
+//     right: 0;
+//     left: 92%;
+//   }
+//   .main-selector .mat-list-base .mat-list-item.mat-2-line, .main-selector .mat-list-base .mat-list-option.mat-2-line{
+//     height: auto;
+//   }
+//   .main-selector .chat-list .pull-right mat-list-item .mat-list-item-content{
+//     align-items: center;
+//     justify-content: flex-end;
+//   }
+//   .main-selector .mat-form-field .mat-form-field-infix, .main-selector .mat-form-field-appearance-outline .mat-form-field-infix{
+//     min-height: 40px;
+//     border-radius: 20%;
+//   }
+//   .main-selector .mat-form-field .cdk-textarea-autosize{
+//     padding-left: 16px !important;
+//   }
+//   .main-selector .mat-form-field:not(.mat-form-field-appearance-outline) .mat-form-field-flex {
+//     border-radius: 20px;
+//     background-color: #f1f3f4;
+//   }
+// }
+// ::ng-deep .mat-form-field .cdk-textarea-autosize {
+//   color: #000;
+// }
+// ::ng-deep .mat-form-field .mat-form-field-label {
+//   color: #000!important;
+// }
+// ::ng-deep .mat-form-field .mat-form-field-underline {
+//   background-color: transparent;
+// }
+// ::ng-deep .mat-form-field .mat-form-field-ripple {
+//   background-color: transparent;
+// }
+// ::ng-deep .mat-form-field .mat-form-field-required-marker {
+//   color: transparent;
+// }
+
+
+// ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+//   color: #000!important;
+// }
+// ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+//   background-color: transparent;
+// }
+// ::ng-deep .mat-form-field.mat-focused .mat-form-field-required-marker {
+//   color: transparent;
+// }
+// ::ng-deep .mat-form-field.mat-focused .cdk-textarea-autosize {
+//   color: #000;
+// }
+
+
+
+// ::ng-deep .mat-form-field.mat-form-field-invalid .cdk-textarea-autosize {
+//   color: #000;
+// }
+// ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+//   color: #000!important;
+// }
+// ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker {
+//   color: #000;
+// }
+// ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-ripple {
+//   background-color: transparent;
+// }

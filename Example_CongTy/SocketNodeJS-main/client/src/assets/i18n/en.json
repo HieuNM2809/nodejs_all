@@ -1,0 +1,31 @@
+{
+  "langList": {
+      "vi": "Vietnamese",
+      "en": "English"
+  },
+  "boxJoin":{
+    "choseLang":"Chose language",
+    "des":"Wellcome to SocketDemo",
+    "name":"Username",
+    "join_group":"Chose group join",
+    "btn_join":"Join"
+  },
+  "chat":{
+    "name_room":"Room Chat:",
+    "users":"List Users:",
+    "leave_room":"Leave Room",
+    "config_remove":"Do you want to leave the chat room {{name}}",
+    "btn-cancel":"Cancal",
+    "btn-accept":"Accept",
+    "btn-save":"Save",
+    "color":"Color",
+    "pannel-option-chat":"Customize the chat",
+    "them-change":"Change theme",
+    "edit-name":"Edit Names",
+    "media":"Media files, files and links",
+    "update":"Updating",
+    "support":"Privacy & support",
+    "you":" (you)",
+    "file":"File Attached"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "langList": {
+      "vi": "Tiếng Việt",
+      "en": "Tiếng Anh"
+
+  },
+  "boxJoin":{
+    "choseLang":"Thay đổi ngôn ngữ",
+    "des":"Chào mừng đến với SocketDemo",
+    "name":"Họ và Tên",
+    "join_group":"Chọn nhóm tham gia chat",
+    "btn_join":"Tham gia"
+  },
+  "chat":{
+    "name_room":"Phòng trò chuyện:",
+    "users":"Danh dách Thành Viên:",
+    "leave_room":"Rời Khỏi Phòng",
+    "config_remove":"Bạn có muốn rời khỏi phòng chat {{name}}",
+    "btn-cancel":"Hủy",
+    "btn-accept":"Đồng ý",
+    "btn-save":"Lưu",
+    "color":"Màu",
+    "pannel-option-chat":"Tùy chỉnh đoạn chat",
+    "them-change":"Đổi chủ đề",
+    "edit-name":"Chỉnh sửa họ tên",
+    "media":" File phương tiện, file và liên kết",
+    "update":"Đang phát triển",
+    "support":"Quyền riêng tư & hỗ trợ",
+    "you":" (bạn)",
+    "file":"Đính kèm File"
+  }
+}
