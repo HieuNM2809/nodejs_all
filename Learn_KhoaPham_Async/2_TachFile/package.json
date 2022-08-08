@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.19",
+    "env-cmd": "^10.1.0"
+  },
+  "name": "2_tachfile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "env-cmd -f .env nodemon index.js",
+    "start:development": "env-cmd -f .env.development npm run start",
+    "start:staging": "env-cmd -f .env.staging npm run start",
+    "start:production": "env-cmd -f .env.production npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
