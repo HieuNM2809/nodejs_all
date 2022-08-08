@@ -23,3 +23,7 @@
 
 Base code nodejs query (async, promise), connect database, reconnect database
 
+
+
+Pre : https://anonystick.com/blog-developer/mysql-nodejs-convert-callback-to-asyncawait-2020040361737963
+
