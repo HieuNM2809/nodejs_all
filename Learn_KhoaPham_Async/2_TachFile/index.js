@@ -3,7 +3,18 @@ var  con  = require('./config/db.js');
 const {query, queryAllUser} = require('./config/query');
 const app = express()
 const port = 3000;
- 
+
+//  ?? : thuộc tính
+//   ? : giá trị
+// var userId = 'hieunm47;select 1;';
+// var userId = 'hieunm47';
+// var columns = ['user_name', 'user_level'];
+// con.query('SELECT ?? FROM ?? where user_name  = ?', [columns, 'kb_users', userId], function (error, results, fields) {
+//   if (error) throw error;
+//   console.log(results); 
+// });
+// return;
+
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/list', async (req, res) => {
