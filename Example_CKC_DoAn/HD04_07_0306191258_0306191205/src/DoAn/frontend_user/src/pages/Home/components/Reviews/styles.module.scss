@@ -1,0 +1,35 @@
+.slider{
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+[class~="slick-slide"]{
+    padding: 0px 10px;
+}
+.componentSlider{
+    overflow-x: clip;  
+   
+}
+[class~="MuiCardHeader-content"]{
+   span{
+    &:first-child{
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+}
+}
+.content{
+    display: -webkit-box;
+  
+    margin: 0 auto;
+    color: black;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  font-size: 14px;
+
+    padding-left: 5px;
+//   padding-top: 15px;
+    text-align: left;
+
+}

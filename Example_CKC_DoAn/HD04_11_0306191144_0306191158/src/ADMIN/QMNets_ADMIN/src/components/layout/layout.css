@@ -1,0 +1,36 @@
+.layout {
+    color: var(--txt-color);
+}
+
+.layout__content {
+    padding-left: var(--sidebar-width);
+    background-color: var(--second-bg);
+    min-height: 100vh;
+}
+
+.ant-picker-date-panel {
+    width: 100%;
+}
+
+.layout__content-main {
+    padding: 5px 20px;
+}
+
+.main-layout {}
+
+.search-layout .ant-row {
+    margin-bottom: 0px;
+}
+
+.search-layout .ant-row+.ant-row {
+    margin-top: 10px;
+}
+
+.search-layout {
+    margin: 0 !important;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    border: thin solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px !important;
+}

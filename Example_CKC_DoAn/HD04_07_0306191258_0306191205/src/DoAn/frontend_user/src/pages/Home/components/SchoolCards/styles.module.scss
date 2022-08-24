@@ -1,0 +1,24 @@
+.logoSchool{
+    object-fit: cover;
+}
+.schools{
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+
+    [class~="MuiCard-root"]{
+        //  max-height:  300px !important;
+        margin: 10px;
+        background-color: #44d744;
+        color: #ffffff;
+        [class~="MuiCardHeader-title"]{
+            font-size: 18px;
+            height: 50px;
+            overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: pre-wrap;
+        }
+    }
+}

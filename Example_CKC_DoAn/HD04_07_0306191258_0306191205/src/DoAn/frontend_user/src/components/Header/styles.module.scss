@@ -1,0 +1,45 @@
+.header{
+  height: 70px !important;
+  display: flex !important;
+  justify-content: center !important;
+  background-color: white !important;
+  color: #f8b600 !important;
+ 
+  button{
+    color: #f8b600 !important;
+  }
+  .logo{
+    width: 80px;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+  .logoMobile{
+    width: 80px;
+  }
+
+}
+.page{
+
+}
+.borderActive {
+  border-left: 3px solid rgba(166, 204, 23, 1) !important;
+  color: rgba(28, 28, 28, 1);
+  padding-left: 12px;
+}
+.navLink{
+  font-size: 18px !important;
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(41, 109, 109);
+
+
+}
+.notActive{
+
+}
+.active{
+  border-bottom: 3px solid rgb(41, 109, 109);
+  text-decoration: none;
+
+}

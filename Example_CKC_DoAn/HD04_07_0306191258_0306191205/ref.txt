@@ -1,0 +1,11 @@
+Tài liệu tham khảo frontend:
+	+ https://react-hook-form.com/
+	+ https://www.npmjs.com/package/yup
+	+ https://mui.com/
+	+ https://redux-toolkit.js.org/
+	+ https://reactjs.org/
+
+Tài liệu tham khảo backend:
+	+ https://expressjs.com/en/guide/routing.html
+	+ https://www.mongodb.com/docs/manual/crud
+	+ https://mongoosejs.com/docs/documents.html

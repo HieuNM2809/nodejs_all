@@ -1,0 +1,4 @@
+export const posts =[
+    {"content":"❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️","images":[{"public_id":"qmedia/yevqzdbjiaeblwpujgbz","url":"http://res.cloudinary.com/quankiu/image/upload/v1640320186/qmedia/yevqzdbjiaeblwpujgbz.jpg"},{"public_id":"qmedia/yevqzdbjiaeblwpujgbz","url":"http://res.cloudinary.com/quankiu/image/upload/v1640320186/qmedia/yevqzdbjiaeblwpujgbz.jpg"}],"likes":[{"$oid":"61c548e06d529141c410df4a"},{"$oid":"61c55f7a2b7c0f183f501ccb"}],"comments":[{"$oid":"61c596e7dcbd34b7a825900a"}],"user":{username: 'quan'},"disableComment":false,createdAt:"2021-12-24T04:29:47.739+00:00",updatedAt:
+"2022-03-17T00:14:25.355+00:00"}
+]

@@ -1,0 +1,43 @@
+.schoolName{
+    font-size: 24px;
+    color: #30e015;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.imgPost{
+    // width: auto;
+    // height: 250px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+.title{
+    text-align: center;
+    color: rgb(41, 109, 109);
+    font-size: 28px;
+    @media only screen and (max-width: 767px) { 
+        font-size: 20px !important;
+       }
+}
+.slider{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-height: 500px;
+   background-color: transparent !important;
+   box-shadow: none !important;
+  
+}
+.content{
+    margin-top: 30px;
+    text-align: initial;
+}
+.navLink{
+    text-decoration: none;
+}

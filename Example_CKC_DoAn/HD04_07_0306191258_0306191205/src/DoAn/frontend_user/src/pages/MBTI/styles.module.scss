@@ -1,0 +1,142 @@
+
+.containerWhes{
+    padding: 35px 100px;
+    @media only screen and (max-width: 767px) {
+        padding: 10px 20px;
+        display: grid;
+      }
+
+}
+.whesBox{
+  
+  
+    text-align: center;
+    padding: 0px 100px;
+    @media only screen and (max-width: 767px) {
+        padding: 0px 10px;
+      }
+}
+
+.right{
+    text-align: initial;
+    display:grid;
+    @media only screen and (max-width: 767px) {
+       padding-left:  0px !important;
+      }
+    .btnAns{
+        border: 2px solid #5f83a7;
+        color: white;
+        margin-bottom: 20px;
+        padding: 15px 0px;
+        @media only screen and (max-width: 767px) {
+        
+            margin-bottom: 10px;
+            padding: 10px 0px;
+           }
+        &:hover{
+            background-color: #f8b600;
+            
+        }
+    }
+}
+.containerWhes{
+    background-color: rgb(41, 109, 109) !important;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+.listCombine{
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   .btnChooseCombine{
+ background-color: rgba(0,0,0,0.3);
+    margin: 5px;
+    color: black;
+    font-size: 17px;
+    &:hover{
+        background-color:#f8b600;
+    }
+   }
+}
+.testNameCombine{
+    color: rgb(41, 109, 109);
+    font-size: 28px;
+    font-weight: 600;
+    @media only screen and (max-width: 767px) {
+        font-size: 24px;
+       }
+}
+.pleaseChoose{
+    color: rgb(41, 109, 109);
+}
+.scoreResult{
+    color: #f8b600;
+    font-size: 28px;
+    @media only screen and (max-width: 767px) {
+        font-size: 24px;
+       }
+}
+.majorResult{
+    color: rgb(41, 109, 109);
+    font-size: 24px;
+    @media only screen and (max-width: 767px) {
+        font-size: 20px;
+       }
+}
+.linkToMajor{
+    text-decoration: none;
+    border: transparent;
+    // padding: 10px 0px;
+  margin-right: 0px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+    transition: 0.7s;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  &:hover{
+    background-color: #f8b600;
+}
+  .btnView{
+    padding: 0px 10px;
+    color: black;   
+    font-family: 600 !important;
+  
+    
+  }
+}
+.btnLink{
+    text-decoration: none;
+    color: black;
+    p{
+        padding: 5px 0px;
+        margin: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.boxResultMajor{
+    background-color: #fff;
+    max-width: 500px;
+    margin: auto;
+    padding: 5px 10px ;
+    margin-bottom: 10px;
+}
+.divider{
+    border-color:#f8b600  !important;
+}
+.btnReset{
+   padding: 5px 30px !important;
+   background-color: rgb(41, 109, 109) !important;
+   color: white !important;
+}
+.questionH2{
+    text-align: left;
+}

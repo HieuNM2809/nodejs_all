@@ -1,0 +1,11 @@
+Tài liệu tham khảo javascript: https//www.w3shools.com/js/default.asp
+Tài liệu reactjs: https://reactjs.org/docs/getting-started.html
+Tài liệu html tài liệu ant design: https://ant.design/docs/react/introduce
+Tài liệu nodemailer: https://www.w3schools.com/nodejs/nodejs_email.asp
+Tài liệu redux-saga: https://redux-saga.js.org/docs/introduction/GettingStarted
+https://viblo.asia/p/redux-cho-nguoi-moi-bat-dau-part-1-introduction-ZjleaBBZkqJ
+Tài liệu mongodb: https://www.mongodb.com/docs/
+Tài liệu Nodejs: https://nodejs.org/en/docs/
+Tài liệu Express: https://expressjs.com/en/starter
+Tài liệu Mongoose : https://mongoosejs.com/docs/documents.html
+Tài liệu soketio: https://socket.io/docs/v4/

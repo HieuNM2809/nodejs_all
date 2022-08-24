@@ -1,0 +1,44 @@
+{
+  "name": "careersguidancewebsitebackend",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "main": "app.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "eslint": "./node_modules/eslint/bin/eslint.js --max-warnings 0 --ext .js .",
+    "start": "node ./bin/start.js",
+    "start-dev": "nodemon ./bin/start",
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.3.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "omit-empty": "^1.0.0",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-express": "^4.4.0",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "mocha": "^9.1.3"
+  }
+}

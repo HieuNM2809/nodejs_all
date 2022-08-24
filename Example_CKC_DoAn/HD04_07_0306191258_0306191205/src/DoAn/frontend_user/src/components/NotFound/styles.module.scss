@@ -1,0 +1,27 @@
+.title {
+    text-align: center;
+    
+    background: linear-gradient(to right, rgb(255, 255, 255) 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+    background-size: 200% auto;
+    font-size: 80px;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 0.7s linear infinite;
+    margin-bottom: 0px;
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+  }
+.iconSad{
+    font-size: 50px !important;
+    color: #919193;
+}
+.subTitle{
+    font-size: 24px;
+}

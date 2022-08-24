@@ -1,0 +1,1 @@
+export const RegionNameCannotBlank = 'Region name can\'t be blank'
